@@ -11,8 +11,8 @@ class HospitalApp extends Component {
           <h1>Hospital Application</h1>
           <Switch>
             <Route path="/" exact component={ListPatientsComponentApp} />
-            <Route path="/courses" exact component={ListPatientsComponentApp} />
-            <Route path="/courses/:id" component={PatientComponent} />
+            <Route path="/patients" exact component={ListPatientsComponentApp} />
+            <Route path="/patients/:id" component={PatientComponent} />
           </Switch>
         </>
       </Router>

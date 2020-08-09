@@ -28,10 +28,10 @@ class PatientComponent extends Component {
   }
   validate(values) {
     let errors = {};
-    if (!values.description) {
+    if (!values.name) {
       errors.name= "Enter a name";
-    } else if (values.description.length < 5) {
-      errors.description = "Enter atleast 5 Characters in Name";
+    } else if (values.name.length < 5) {
+      errors.name = "Enter atleast 5 Characters in Name";
     }
     return errors;
   }
@@ -83,7 +83,7 @@ class PatientComponent extends Component {
                   />
                 </fieldset>
                 <fieldset className="form-group">
-                  <label>name</label>cl
+                  <label>name</label>
                   <Field
                     className="form-control"
                     type="text"
